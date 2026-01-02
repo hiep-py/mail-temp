@@ -43,7 +43,7 @@ TempMail Pro is a high-performance, professional disposable email solution runni
 
 #### 4. Deploying Code
 - Create a new Cloudflare Worker.
-- Paste the `index.js` content into the editor.
+- Paste the `worker.js` content into the editor.
 - Update the `DOMAINS` array in the `CONFIG` constant with your domains.
 - Bind the KV namespace:
   - Settings -> Variables -> KV Namespace Bindings -> Add `EMAILS`.
@@ -55,6 +55,10 @@ TempMail Pro is a high-performance, professional disposable email solution runni
 |---------------|--------|--------------------------------------------------|
 | `/api/new`    | GET    | Create a new inbox. Returns address and secret.  |
 | `/api/messages` | GET  | Fetch emails. Requires address and secret params.|
+
+### 📹 Video Tutorial
+
+Check out this setup tutorial by Đạt Nguyễn TV: [YouTube](https://youtu.be/kR0c-4AIbkI?si=mFExnFa_frko4_Hz)
 
 ---
 
@@ -90,7 +94,7 @@ TempMail Pro là giải pháp email tạm thời chuyên nghiệp, hiệu suất
 
 #### 4. Triển khai mã nguồn
 - Tạo một Cloudflare Worker mới.
-- Dán nội dung file `index.js` vào trình soạn thảo.
+- Dán nội dung file `worker.js` vào trình soạn thảo.
 - Cập nhật mảng `DOMAINS` trong hằng số `CONFIG` bằng tên miền của bạn.
 - Liên kết KV:
   - Vào Settings -> Variables -> KV Namespace Bindings -> Thêm `EMAILS`.
@@ -103,13 +107,18 @@ TempMail Pro là giải pháp email tạm thời chuyên nghiệp, hiệu suất
 | `/api/new`    | GET         | Tạo hộp thư mới. Trả về address và secret.     |
 | `/api/messages` | GET       | Lấy danh sách email. Cần tham số address và secret. |
 
+### 📹 Video Hướng dẫn
+
+Xem video hướng dẫn setup này bởi Đạt Nguyễn TV: [YouTube](https://youtu.be/kR0c-4AIbkI?si=mFExnFa_frko4_Hz)
+
 ---
 
 ## 👨‍💻 Author & Credits
 
 **Developer:** Ho Hiep  
 **GitHub:** [@hiep-py](https://github.com/hiep-py)  
-**License:** MIT
+**License:** MIT  
+**Special Thanks:** Đạt Nguyễn TV for code reference.
 
 <p align="center">
   <i>If you find this project useful, please give it a ⭐ on GitHub!</i>  
